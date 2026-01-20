@@ -8,7 +8,7 @@
 import Foundation
 
 struct MainPageCard: Identifiable, Hashable {
-    let id = UUID()
+    let id: UUID
     let pageTitle: String
     let contextImageName: String
     let contextDescription: String

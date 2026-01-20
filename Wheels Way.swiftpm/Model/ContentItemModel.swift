@@ -8,7 +8,8 @@
 import Foundation
 
 struct Card: Identifiable, Hashable {
-    let id = UUID()
+    let id: UUID
+    let intId: Int
     let title: String
     let imageName: String
     let description: String

@@ -36,11 +36,18 @@ struct MapsStyleView: View {
         } content: {
             List(cards, selection: $cardSelection) { card in
                 Button {
-                    cardSelection = card                } label: {
+                    cardSelection = card
+                } label: {
                         Text(card.title)
-                        Text(card.description)
-                        Image("\(card.imageName)").resizable().scaledToFit()
+                        .font(.largeTitle)
+                        Image("\(card.imageName)")
+                            .resizable()
+                            .scaledToFit()
+                            .clipShape(RoundedRectangle(cornerRadius: 20))
+                            .shadow(radius: 10)
+                    Text(card.description)
                     }
+                
             }
             .navigationTitle("Key inventions")
             .toolbar {
@@ -52,15 +59,22 @@ struct MapsStyleView: View {
                     }
                 }
             }
-            
-            
         }
         detail: {
             if let card = cardSelection {
                 VStack {
-                    switch card.title {
-                    case "Benz Patent-Motorwagen - 1886":
+                    switch card.intId {
+                    case 1:
+                        ContentView()
+                    case 2:
                         WelcomeView()
+                    case 3:
+                        ContentView()
+                    case 4:
+                        WelcomeView()
+                    case 5:
+                        ContentView()
+                        
                     default:
                         ContentView()
                     }
@@ -71,6 +85,9 @@ struct MapsStyleView: View {
         }
         .onChange(of: sidebarSelection!) { newCards in
             cards = sideBarViewModel.loadInventions(selection: sidebarSelection!)
+        }
+        .onAppear(){
+            cards = sideBarViewModel.loadInventions(selection: .Welcome)
         }
     }
 }
