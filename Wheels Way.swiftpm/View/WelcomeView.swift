@@ -9,7 +9,7 @@ import SwiftUI
 
 struct WelcomeView: View {
     var body: some View {
-        
+        @State var sideBarViewModel = SideBarViewModel()
         NavigationStack{
             ZStack{
                 Image("windowBackGround")
@@ -32,7 +32,7 @@ struct WelcomeView: View {
                         HStack{
                             Spacer()
                             NavigationLink {
-                                WelcomeView()
+                                sideBarViewModel.principalCardViewBuilder(cardIntId: 1)
                             }
                             label: {
                                 Text("Next")

@@ -33,14 +33,10 @@ class SideBarViewModel{
             ]
             return cards
         case .XX:
-            cards = [
-                Card(id: UUID(), intId: 3,title: "Benz Patent-Motorwagen - 1886", imageName: "", description: "The world's first practical, gasoline-powered automobile, marking the beginning of the automotive era"),
-            ]
+            cards = []
             return cards
         case .XXI:
-            cards = [
-                Card(id: UUID(), intId: 5,title: "Benz Patent-Motorwagen - 1886", imageName: "", description: "The world's first practical, gasoline-powered automobile, marking the beginning of the automotive era"),
-            ]
+            cards = []
             return cards
         }
     }
@@ -48,7 +44,7 @@ class SideBarViewModel{
     func  principalCardViewBuilder (cardIntId: Int) -> DetailPageCardView {
         switch cardIntId{
         case 1:
-            DetailPageCardView(id: UUID(), pageTitle: "Fardier à vapeur - 1769", contextImageName: "Card1", contextDescription: "In 1769, the French military engineer Nicolas-Joseph Cugnot built the world's first functional self-propelled land vehicle, the Fardier à vapeur, a three-wheeled steam tractor designed for the army, considered the starting point of the automobile, despite its slowness, instability, and need for frequent refueling with wood.", inventorsImageName: "Card1", inventorsDescription: "He was born in Void-Vacon, Lorraine (now Meuse department), France. A military engineer, in 1765 he began experimenting with functional models of steam-powered vehicles for the French army, intended for transporting cannons.", inventionImageName: "Card1", invetionSoundName: "Card1", inventionDescription: "With the purpose of transporting heavy artillery cannons for the French army, it used a steam engine that moved a front wheel via pistons and a ratchet system, converting linear motion into rotary motion. It could reach speeds of about 4 km/h, but needed to stop every 15 minutes to refuel its copper boiler with firewood, making it very unstable. Despite its limitations, it represented a significant advance, showing the potential for self-propelled vehicles, although its practicality was limited by the technology of the time. It is recognized by the Guinness World Records as the first full-scale automobile.")
+            DetailPageCardView(id: UUID(), pageTitle: "Fardier à vapeur - 1769", contextImageName: "FranceFlag", contextDescription: "In 1769, the French military engineer Nicolas-Joseph Cugnot built the world's first functional self-propelled land vehicle, the Fardier à vapeur, a three-wheeled steam tractor designed for the army, considered the starting point of the automobile, despite its slowness, instability, and need for frequent refueling with wood.", inventorsImageName: "NicolasJosephCugnot", inventorsDescription: "Nicolas Joseph Cugnot was born in Void-Vacon, Lorraine (now Meuse department), France. A military engineer, in 1765 he began experimenting with functional models of steam-powered vehicles for the French army, intended for transporting cannons.", inventionImageName: "Card1", invetionSoundName: "FardierVapeurAudio", inventionDescription: "With the purpose of transporting heavy artillery cannons for the French army, it used a steam engine that moved a front wheel via pistons and a ratchet system, converting linear motion into rotary motion. It could reach speeds of about 4 km/h, but needed to stop every 15 minutes to refuel its copper boiler with firewood, making it very unstable. Despite its limitations, it represented a significant advance, showing the potential for self-propelled vehicles, although its practicality was limited by the technology of the time. It is recognized by the Guinness World Records as the first full-scale automobile.")
         default:
             DetailPageCardView(id: UUID(), pageTitle: "Fardier à vapeur - 1769", contextImageName: "imagem", contextDescription: "imagem", inventorsImageName: "imagem", inventorsDescription: "imagem", inventionImageName: "imagem", invetionSoundName: "imagem", inventionDescription: "imagem")
             
