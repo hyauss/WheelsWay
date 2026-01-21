@@ -15,7 +15,7 @@ struct WelcomeView: View {
                 Image("windowBackGround")
                     .resizable()
                     .ignoresSafeArea()
-                    .opacity(0.7)
+                    .opacity(0.8)
                 GeometryReader { i in
                     VStack(alignment:.center){
                         Text("Welcome!")
@@ -49,6 +49,7 @@ struct WelcomeView: View {
                     .padding(.horizontal,i.size.width * 0.09)
                 }
             }
+            
         }
     }
     

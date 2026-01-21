@@ -39,15 +39,15 @@ struct MapsStyleView: View {
                     cardSelection = card
                 } label: {
                         Text(card.title)
-                        .font(.largeTitle)
+                            .font(.largeTitle)
                         Image("\(card.imageName)")
                             .resizable()
                             .scaledToFit()
                             .clipShape(RoundedRectangle(cornerRadius: 20))
                             .shadow(radius: 10)
-                    Text(card.description)
+                            .padding()
+                        Text(card.description)
                     }
-                
             }
             .navigationTitle("Key inventions")
             .toolbar {
@@ -64,19 +64,12 @@ struct MapsStyleView: View {
             if let card = cardSelection {
                 VStack {
                     switch card.intId {
+                    case 0:
+                        WelcomeView()
                     case 1:
-                        ContentView()
-                    case 2:
-                        WelcomeView()
-                    case 3:
-                        ContentView()
-                    case 4:
-                        WelcomeView()
-                    case 5:
-                        ContentView()
-                        
+                        sideBarViewModel.principalCardViewBuilder(cardIntId: 1)
                     default:
-                        ContentView()
+                        WelcomeView()
                     }
                 }
             } else {

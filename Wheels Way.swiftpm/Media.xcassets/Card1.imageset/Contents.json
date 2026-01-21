@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "Joseph_Cugnot's_1770_Fardier_à_Vapeur,_Musée_des_arts_et_métiers,_Paris_2015.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
