@@ -19,6 +19,7 @@ struct DetailPageCardView: View {
     let invetionSoundName: String
     let inventionDescription: String
     @State var soundManager = SoundManager()
+    @State var sideBarViewModel = SideBarViewModel()
     
     var body: some View {
         
@@ -72,7 +73,9 @@ struct DetailPageCardView: View {
                             HStack{
                                 Spacer()
                                 NavigationLink {
-                                    MapsStyleView()
+                                    //sideBarViewModel.principalCardViewBuilder(cardIntId: cardIntId)
+                                    sideBarViewModel.principalCardViewBuilder(cardIntId: 0)
+                                    
                                 }
                                 label: {
                                     Text("Next")

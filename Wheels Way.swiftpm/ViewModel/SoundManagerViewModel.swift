@@ -34,9 +34,5 @@ final class SoundManager: ObservableObject {
             print(error)
         }
     }
-    
-    func pauseAudio(){
-        audioPlayer?.pause()
-    }
 }
 

@@ -68,8 +68,10 @@ struct MapsStyleView: View {
                         WelcomeView()
                     case 1:
                         sideBarViewModel.principalCardViewBuilder(cardIntId: 1)
+                    case 2:
+                        sideBarViewModel.principalCardViewBuilder(cardIntId: 2)
                     default:
-                        WelcomeView()
+                        sideBarViewModel.principalCardViewBuilder(cardIntId: 0)
                     }
                 }
             } else {
