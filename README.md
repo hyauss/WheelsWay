@@ -4,11 +4,9 @@ Esse projeto é um experiência desenvolvida para o Swift Student Challenge, **W
 
 # Preview
 
-<img width="1608" height="1078" alt="image" src="https://github.com/user-attachments/assets/83dd73dc-d937-408b-aa01-1e4cfd82892d" />
+<img width="3012" height="1890" alt="image" src="https://github.com/user-attachments/assets/91e291a4-e466-4598-a6d4-3c939611b839" />
 
-<img width="1608" height="1078" alt="image" src="https://github.com/user-attachments/assets/fd4b0097-1de2-4ee8-9944-61dc8f0dd355" />
+<img width="3010" height="1892" alt="image" src="https://github.com/user-attachments/assets/a31b1a44-a291-4373-8ad8-21375120fb5d" />
 
-<img width="1608" height="1078" alt="image" src="https://github.com/user-attachments/assets/2df44fb7-f3c1-432d-9086-5f22957f49d1" />
-
-<img width="1608" height="1078" alt="image" src="https://github.com/user-attachments/assets/0de7f78f-5259-4906-9507-ff6271e7f63b" />
+<img width="3014" height="1892" alt="image" src="https://github.com/user-attachments/assets/6f3696d0-52c5-46e1-b549-bcc703774ca8" />
 
