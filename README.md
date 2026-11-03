@@ -1,6 +1,6 @@
 <div align="center">
 
-# Wheels Way (Challenge 10)
+# Wheels Way
 
 [![iOS](https://img.shields.io/badge/iOS-16%2B-000000?logo=apple)](https://developer.apple.com/ios/)
 [![iPadOS](https://img.shields.io/badge/iPadOS-16%2B-000000?logo=apple)](https://developer.apple.com/ipados/)
